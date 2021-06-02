@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_content"
+    tools:context=".UI.Fragments.MainFragment"
+    android:paddingBottom="45dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/news"
+                android:textAppearance="?android:attr/titleTextAppearance"
+                android:textColor="?text_primary"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/favorite"
+                android:backgroundTint="?background_content"
+                android:gravity="center"
+                android:src="@drawable/share" />
+
+            <ImageButton
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="?background_content"
+                android:src="@drawable/favorite" />
+        </RelativeLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?background_content"
+                    android:src="@drawable/card_main" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?background_content"
+                    android:src="@drawable/card_main" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?background_content"
+                    android:src="@drawable/card_main" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sale"
+                android:paddingStart="25dp"
+                android:textAppearance="?android:attr/titleTextAppearance"
+                android:textColor="?text_primary"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?background_content"
+                android:src="@drawable/salecard" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?background_content"
+                android:src="@drawable/salecard" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?background_content"
+                android:src="@drawable/salecard" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

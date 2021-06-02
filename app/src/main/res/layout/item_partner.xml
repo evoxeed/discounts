@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/card_parters_info"
+    android:elevation="@dimen/newsfeed_newpost_authors_layout_elevation"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/partner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:textColor="?text_primary"
+        android:textIsSelectable="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="Какое-то имя партнера" />
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginHorizontal="30dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/chips_background"-->
+<!--            android:elevation="@dimen/newsfeed_newpost_authors_layout_elevation"-->
+<!--            android:paddingVertical="5dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toStartOf="@+id/city"-->
+<!--                android:src="@drawable/point" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/city"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:text="Тюмень"-->
+<!--                android:textColor="?text_primary"-->
+<!--                android:textSize="20sp" />-->
+<!--        </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_parters_info"
+        android:paddingVertical="20dp">
+
+        <RelativeLayout
+            android:id="@+id/wrapper_addresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/partner_addresses_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingStart="20dp"
+                android:src="@drawable/point" />
+
+            <TextView
+                android:id="@+id/partner_addresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/partner_addresses_icon"
+                android:paddingStart="20dp"
+                android:textColor="?text_secondary"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                tools:text="Какое-то адрес партнера" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wrapper_addresses"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/partner_contact_phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="20dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/partner_contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/partner_contact_phone_icon"
+                android:paddingStart="20dp"
+                android:textColor="?text_secondary"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:autoLink="all"
+                tools:text="Какое-то номер партнера" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/partner_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?text_secondary"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            tools:text="Какое-то описание партнера" />
+
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?android:selectableItemBackground"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="Читать полностью..."
+            android:textColor="#ff5181bc"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

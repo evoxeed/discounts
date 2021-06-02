@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/match_parent"
+    android:layout_width="@dimen/match_parent"
+    >
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/navigation_home_selector"
+        android:title="@string/main" />
+
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/navigation_search_selector"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/navigation_profile_selector"
+        android:title="@string/profile" />
+</menu>
