@@ -6,6 +6,14 @@
 
 Проект создан для компании **"Профсоюзный дисконт"** для удобного пользования их продуктом
 
+
+[Видео](https://photos.app.goo.gl/gq5SZtG1HeUHHz4c8)
+
+[Презентация](https://1drv.ms/p/s!AgwA_kBGz2Etk-lY1UDAsSaO96wRiA?e=S3clrn)
+
+(*Из-за ограничения самим Github'oм видео и презентацию выгрузил на отдельный диск*)
+
+
 ## Проект в Figma :pushpin:
 
 **Для просмотра -** [*тыц*](https://www.figma.com/file/jN1oC8cqi5yOB5FDx1MVxe/discount?node-id=0%3A1)
